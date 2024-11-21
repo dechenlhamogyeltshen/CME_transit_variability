@@ -12,5 +12,5 @@
 
 module load anaconda
 source activate sir_huxt
-nohup python article.py & disown
-
+nohup python article.py &
+disown

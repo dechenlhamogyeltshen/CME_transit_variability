@@ -1307,3 +1307,19 @@ def find_Earth_connected_field_line(model, time):
     plotlon = np.append(plotlon, H._zerototwopi_(plotlon[-1] + dlon))
 
     return plotlon, (plotr*u.km).to(u.solRad).value, optimal_lon, optimal_t
+    
+def get_body_styles():
+    """
+    Return a dictionary of observer/body names with associated colors and markerstyles
+    """
+
+    body_styles = {'MERCURY': {'color': 'black', 'marker': 'o'},
+                   'VENUS': {'color': 'tan', 'marker': 'o'},
+                   'EARTH': {'color': 'c', 'marker': 'o'},
+                   'MARS': {'color': 'darkred', 'marker': 'o'},
+                   'JUPITER': {'color': 'orange', 'marker': 'o'},
+                   'SATURN': {'color': 'm', 'marker': 'o'},
+                   'STA': {'color': 'r', 'marker': 's'},
+                   'STB': {'color': 'y', 'marker': '^'}}
+
+    return body_styles

@@ -64,11 +64,16 @@ def run_experiment():
         cr_group = out_file.create_group('CR_{:d}'.format(cr_number))
 
         # import solar wind conditions
-        vr_in = Hin.get_MAS_long_profile(cr_number, 0.0 * u.deg)
-
-        # Export SW conditions and measure of variability in SW.
-        cr_group.create_dataset('vr_in', data=vr_in)
-        cr_group.create_dataset('vr_in_std', data=np.std(vr_in))
+        try:
+            vr_in = Hin.get_MAS_long_profile(cr_number, 0.0 * u.deg)
+            
+            # Export SW conditions and measure of variability in SW.
+            cr_group.create_dataset('vr_in', data=vr_in)
+            cr_group.create_dataset('vr_in_std', data=np.std(vr_in))
+            
+        except Exception as e:
+            print(f"Error fetching solar wind data for CR {cr_number}: {e}")
+            continue
 
         # Loop over CME scenarios
         for cme_label, cme in cme_scenarios.items():
