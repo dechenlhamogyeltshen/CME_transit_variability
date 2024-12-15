@@ -35,10 +35,10 @@ def build_cme_scenarios():
     """
     # make CME scenarios
     cme_average = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=37.4 * u.deg, v=495 * (u.km / u.s),
-                            thickness=0 * u.solRad)
+                            thickness=0 * u.solRad, cme_fixed_duration=True, fixed_duration=8*60*60*u.s)
 
     cme_fast = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=69.8 * u.deg, v=1070 * (u.km / u.s),
-                         thickness=0 * u.solRad)
+                         thickness=0 * u.solRad, cme_fixed_duration=True, fixed_duration=8*60*60*u.s)
 
     cme_scenarios = {'cme_average': cme_average, 'cme_fast': cme_fast}
     return cme_scenarios
