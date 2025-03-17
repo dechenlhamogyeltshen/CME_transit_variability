@@ -35,10 +35,10 @@ def build_cme_scenarios():
     """
     # make CME scenarios
     cme_average = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=37.4 * u.deg, v=495 * (u.km / u.s),
-                            thickness=0 * u.solRad, cme_fixed_duration=True, fixed_duration=8*60*60*u.s)
+                            thickness=0 * u.solRad)
 
     cme_fast = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=69.8 * u.deg, v=1070 * (u.km / u.s),
-                         thickness=0 * u.solRad, cme_fixed_duration=True, fixed_duration=8*60*60*u.s)
+                         thickness=0 * u.solRad)
 
     cme_scenarios = {'cme_average': cme_average, 'cme_fast': cme_fast}
     return cme_scenarios
@@ -52,7 +52,8 @@ def run_experiment():
     out_file = h5py.File(out_path, 'w')
 
     # specify carrington number range
-    cr_num_list = np.arange(1625,2270,1)
+    # cr_num_list = get_cr_number_list()
+    cr_num_list = np.arange(1625,2293,1)
 
     # Get ConeCME scenarios for experiment
     cme_scenarios = build_cme_scenarios()
@@ -66,10 +67,13 @@ def run_experiment():
         # import solar wind conditions
         try:
             vr_in = Hin.get_MAS_long_profile(cr_number, 0.0 * u.deg)
-            
+
+            #  Map the inner boundary MAS values inwards from 30 rS to 21.5 rS
+            vr_21 = Hin.map_v_boundary_inwards(vr_in, 30*u.solRad, 21.5*u.solRad)
+
             # Export SW conditions and measure of variability in SW.
-            cr_group.create_dataset('vr_in', data=vr_in)
-            cr_group.create_dataset('vr_in_std', data=np.std(vr_in))
+            cr_group.create_dataset('vr_21', data=vr_21)
+            cr_group.create_dataset('vr_21_std', data=np.std(vr_21))
             
         except Exception as e:
             print(f"Error fetching solar wind data for CR {cr_number}: {e}")
@@ -97,7 +101,7 @@ def run_experiment():
                 dphi = (360 * (27 - j) / 27) * u.deg
 
                 # Initialise HUXt at this CR lon
-                model = H.HUXt(v_boundary=vr_in, cr_num=cr_number, cr_lon_init=dphi, lon_start=-5 * u.deg,
+                model = H.HUXt(v_boundary=vr_21, cr_num=cr_number, cr_lon_init=dphi, lon_start=-5 * u.deg,
                                lon_stop=5 * u.deg, simtime=7 * u.day, dt_scale=4)
 
                 # Solve HUXt for this CME/CR lon
@@ -131,3 +135,4 @@ def run_experiment():
 
 if __name__ == "__main__":
     run_experiment()
+
