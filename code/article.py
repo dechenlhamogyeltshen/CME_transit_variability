@@ -35,10 +35,10 @@ def build_cme_scenarios():
     """
     # make CME scenarios
     cme_average = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=37.4 * u.deg, v=495 * (u.km / u.s),
-                            thickness=0 * u.solRad)
+                            thickness=0 * u.solRad, initial_height=21.5 * u.solRad)
 
     cme_fast = H.ConeCME(t_launch=0 * u.day, longitude=0.0 * u.deg, width=69.8 * u.deg, v=1070 * (u.km / u.s),
-                         thickness=0 * u.solRad)
+                         thickness=0 * u.solRad, initial_height=21.5 * u.solRad)
 
     cme_scenarios = {'cme_average': cme_average, 'cme_fast': cme_fast}
     return cme_scenarios
@@ -102,7 +102,7 @@ def run_experiment():
 
                 # Initialise HUXt at this CR lon
                 model = H.HUXt(v_boundary=vr_21, cr_num=cr_number, cr_lon_init=dphi, lon_start=-5 * u.deg,
-                               lon_stop=5 * u.deg, simtime=7 * u.day, dt_scale=4)
+                               lon_stop=5 * u.deg, simtime=7 * u.day, r_min=21.5*u.solRad, dt_scale=4)
 
                 # Solve HUXt for this CME/CR lon
                 model.solve([cme])
