@@ -4,24 +4,17 @@ Files already exist for CR1627
 Files already exist for CR1628
 Files already exist for CR1629
 Files already exist for CR1630
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1631: 
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1632: 
+Error fetching solar wind data for CR 1631: [Errno 110] Connection timed out
+Error fetching solar wind data for CR 1632: [Errno 110] Connection timed out
 Files already exist for CR1633
 Files already exist for CR1634
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1635: 
+Error fetching solar wind data for CR 1635: [Errno 110] Connection timed out
 Files already exist for CR1636
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1637: 
+Error fetching solar wind data for CR 1637: [Errno 110] Connection timed out
 Files already exist for CR1638
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1639: 
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1640: 
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1641: 
+Error fetching solar wind data for CR 1639: [Errno 110] Connection timed out
+Error fetching solar wind data for CR 1640: [Errno 110] Connection timed out
+Error fetching solar wind data for CR 1641: [Errno 110] Connection timed out
 Files already exist for CR1642
 Files already exist for CR1643
 Files already exist for CR1644
@@ -41,14 +34,11 @@ Files already exist for CR1657
 Files already exist for CR1658
 Files already exist for CR1659
 Files already exist for CR1660
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1661: 
+Error fetching solar wind data for CR 1661: [Errno 110] Connection timed out
 Files already exist for CR1662
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1663: 
+Error fetching solar wind data for CR 1663: [Errno 110] Connection timed out
 Files already exist for CR1664
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1665: 
+Error fetching solar wind data for CR 1665: [Errno 110] Connection timed out
 Files already exist for CR1666
 Files already exist for CR1667
 Files already exist for CR1668
@@ -61,8 +51,7 @@ Files already exist for CR1674
 Files already exist for CR1675
 Files already exist for CR1676
 Files already exist for CR1677
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1678: 
+Error fetching solar wind data for CR 1678: [Errno 110] Connection timed out
 Files already exist for CR1679
 Files already exist for CR1680
 Files already exist for CR1681
@@ -77,8 +66,7 @@ Files already exist for CR1689
 Files already exist for CR1690
 Files already exist for CR1691
 Files already exist for CR1692
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1693: 
+Error fetching solar wind data for CR 1693: [Errno 110] Connection timed out
 Files already exist for CR1694
 Files already exist for CR1695
 Files already exist for CR1696
@@ -90,8 +78,7 @@ Files already exist for CR1701
 Files already exist for CR1702
 Files already exist for CR1703
 Files already exist for CR1704
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 1705: 
+Error fetching solar wind data for CR 1705: [Errno 110] Connection timed out
 Files already exist for CR1706
 Files already exist for CR1707
 Files already exist for CR1708
@@ -661,27 +648,26 @@ Files already exist for CR2266
 Files already exist for CR2267
 Files already exist for CR2268
 Files already exist for CR2269
-Downloading from:  http://www.predsci.com/data/runs/cr2270-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2271-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2272-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2273-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2274-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2275-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2276-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2277-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2278-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2279-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2280-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2281-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2282-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2283-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2284-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2285-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2286-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2287-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2288-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2289-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2290-high/hmi_masp_mas_std_0201/helio/
-Downloading from:  http://www.predsci.com/data/runs/cr2291-high/hmi_masp_mas_std_0201/helio/
-No data available for given CR and observatory preferences
-Error fetching solar wind data for CR 2292: 
+Files already exist for CR2270
+Files already exist for CR2271
+Files already exist for CR2272
+Files already exist for CR2273
+Files already exist for CR2274
+Files already exist for CR2275
+Files already exist for CR2276
+Files already exist for CR2277
+Files already exist for CR2278
+Files already exist for CR2279
+Files already exist for CR2280
+Files already exist for CR2281
+Files already exist for CR2282
+Files already exist for CR2283
+Files already exist for CR2284
+Files already exist for CR2285
+Files already exist for CR2286
+Files already exist for CR2287
+Files already exist for CR2288
+Files already exist for CR2289
+Files already exist for CR2290
+Files already exist for CR2291
+Downloading from:  http://www.predsci.com/data/runs/cr2292-high/hmi_masp_mas_std_0201/helio/
