@@ -1,5 +1,5 @@
 # CME_Transit_Variability
-Python scripts and data to investigate the variability of CME (Coronal Mass Ejection) transit times to Earth and arrival speeds at Earth. Uses the HUXt (Heliospheric Upwind Extrapolation with time dependence) solar wind model and 50 years of ambient solar wind solutions from the MAS (Magnethydrodynamic Algorithm around a Sphere) coronal model (https://www.predsci.com/mhdweb/home.php).
+Python scripts and data to investigate the variability of Coronal Mass Ejection (CME) transit times to Earth and arrival speeds at Earth over the solar cycle. Uses the HUXt (Heliospheric Upwind Extrapolation with time dependence) solar wind model and 50 years of ambient solar wind solutions from the MAS (Magnethydrodynamic Algorithm around a Sphere) coronal model (https://www.predsci.com/mhdweb/home.php).
 
 code/article.py contains script to simulate the CME propagations using HUXt.
 code/analysis.ipynb contains script to generate plots and perform analysis tests.
